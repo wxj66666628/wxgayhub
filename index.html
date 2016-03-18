@@ -6,41 +6,141 @@
 
 	<style type="text/css">
 
-	html{
-		background:-moz-linear-gradient(left,#ace,#f96);/*Mozilla*/
-background:-webkit-gradient(linear,0 50%,100% 50%,from(#ace),to(#f96));/*Old gradient for webkit*/
-background:-webkit-linear-gradient(left,#ace,#f96);/*new gradient for Webkit*/
-background:-o-linear-gradient(left,#ace,#f96); /*Opera11*/
-background:-ms-linear-gradient(left,#ace,#f96); /*Opera11*/
+		html {
+			/*background: -moz-linear-gradient(left, #CCFF99, #CCCCFF); !*Mozilla*!
+			background: -webkit-gradient(linear, 0 50%, 100% 50%, from(#ace), to(#f96)); !*Old gradient for webkit*!
+			background: -webkit-linear-gradient(left, #ace, #f96); !*new gradient for Webkit*!
+			background: -o-linear-gradient(left, #ace, #f96); !*Opera11*!
+			background: -ms-linear-gradient(left, #ace, #f96); !*Opera11*!*/
+			font: bold 2rem/100% "Microsoft YaHei", Helvetica, Arial, Sans;
+			animation: bgchange 5s infinite alternate;
+		}
 
-
-	}
-
-	.browserTest
-	{
-		border:20px solid rgba(60,164,183,0.21);
-		font: bold 55px/100% "Microsoft YaHei",Helvetica, Arial,Sans;
-		color: #000;
-		*border:20px solid #00F;
-		margin:5px;/*IE下理解为10px*/
-		display:block;/*IE下再理解为5px*/
-		-moz-border-radius: 10px 15px 20px 30px / 20px 30px 10px 15px;
+		.browserTest {
+			border: 0.3em solid rgba(60, 164, 183, 0.21);
+			font: bold 1em/100% "Microsoft YaHei", Helvetica, Arial, Sans;
+			color: #000;
+			*border: 16px solid #00F;
+			margin: 0.1em auto; /*IE下理解为10px*/
+			padding: 0.2em;
+			display: block; /*IE下再理解为5px*/
+			-moz-border-radius: 10px 15px 20px 30px / 20px 30px 10px 15px;
 			-webkit-border-radius: 10px 15px 20px 30px / 20px 30px 10px 15px;
 			border-radius: 10px 15px 20px 30px / 20px 30px 10px 15px;
+			text-shadow: 3px 6px 9px rgba(240, 255, 0, 0.55), 0 0 5px #fff, 0 0 10px #fff,
+			0 0 15px #fff, 0 0 40px #ff00de, 0 0 70px #ff00de;
+			text-align: center;
+			/*column-count: 4*/
+			animation: textin 1.8s 1;
+		}
 
-			text-shadow:  3px 6px 9px rgba(240,255,0,0.55), 0 0 5px #fff, 0 0 10px #fff,
-			0 0 15px #fff,0 0 40px #ff00de,0 0 70px #ff00de;
+		.outerBro {
+			margin-top: 1.2em;
+		}
 
-		column-count:4
-	}
+		.browserTest a {
+			text-decoration: none;
+			color: #000;
+		}
+		
+		.browserTest:focus ,.browserTest:hover ,.browserTest a:hover{
+			color: cornflowerblue;
+			border-color: transparent;
+			transform:rotate(7deg);
 
+		}
+		
+		@media all and (max-width: 300px) {
+			.browserTest {
+				padding: 0.3em;
+				font-size: 9.8vmin;
+			}
+			.outerBro {
+				margin-top: 6vh;
+			}
+		}
+
+		@media all and (max-width: 240px) {
+			.img>img {
+				width: 80vw;
+				border-radius: 40vw;
+			}
+		}
+
+		@keyframes bgchange {
+			0% {
+				background-color: aliceblue;
+			}
+			20% {
+				background: #CCFF99;
+			}
+			40% {
+				background: #FF99CC;
+			}
+			60% {
+				background: #663366;
+			}
+			80% {
+				background: #003399;
+			}
+			100% {
+				background-color: #CCCCCC;
+			}
+		}
+
+		.img {
+			text-align:center;
+			margin-bottom: 6vh;
+			animation: inlogo 3.8s normal;
+		}
+
+		.img a>img {
+			width: 184px;
+			border-radius: 92px;
+		}
+
+		img:hover {
+			border: solid 3px cornflowerblue;
+		}
+
+		@keyframes inlogo {
+			0% {
+				opacity: 0;
+				filter: alpha(opacity = 0);   /*兼容ie8以前*/
+				transform:rotate(180deg);
+			}
+
+			100% {
+				transform:rotate(360deg);
+			}
+		}
+
+		@keyframes textin {
+			0% {
+				margin-top: 100vh;
+			}
+			30% {
+				margin-top: 30vh;
+			}
+			100% {
+				margin-top: 1.2em;
+			}
+		}
 	</style>
 </head>
 <body>
-	<div class="browserTest" > 星际长途何时开始
-		<div class="browserTest"  style="columns:12em">wxj66666628</div>
-		<div class="browserTest"  style="columns:12em">gayhub</div>
+<div class="outerBro">
+	<div class="img">
+		<a href="https://github.com/wxj66666628" target="_blank">
+		<img src="images/0.jpg" alt="wxj66666628(星际长途)" title="wxj66666628(星际长途)">
+		</a>
 	</div>
+	<div class="browserTest"><a href="https://github.com/wxj66666628" target="_blank" title="https://github.com/wxj66666628">星际长途何时开始</a>
+		<div class="browserTest" title="版权所有&copy;">wxj66666628</div>
+		<div class="browserTest">gayhub</div>
+	</div>
+</div>
+
 
 </body>
 </html>
