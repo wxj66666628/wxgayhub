@@ -20,12 +20,12 @@
 		}
 
 		.browserTest {
-			border: 0.3em solid rgba(60, 164, 183, 0.21);
-			font: bold 1em/100% "Microsoft YaHei", Helvetica, Arial, Sans;
+			border: 0.5em solid rgba(60, 164, 183, 0.21);
+			font: bold 0.96rem/100% "Microsoft YaHei", Helvetica, Arial, Sans;
 			color: #000;
 			*border: 16px solid #00F;
-			margin: 0.1em auto; /*IE下理解为10px*/
-			padding: 0.2em;
+			margin: 0.2em auto; /*IE下理解为10px*/
+			padding: 2.5em auto;
 			display: block; /*IE下再理解为5px*/
 			-moz-border-radius: 10px 15px 20px 30px / 20px 30px 10px 15px;
 			-webkit-border-radius: 10px 15px 20px 30px / 20px 30px 10px 15px;
@@ -56,7 +56,7 @@
 		@media all and (max-width: 300px) {
 			.browserTest {
 				padding: 0.3em;
-				font-size: 9.8vmin;
+				font-size: 9.3vmin;
 			}
 			.outerBro {
 				margin-top: 6vh;
@@ -100,10 +100,12 @@
 		.img a>img {
 			width: 184px;
 			border-radius: 92px;
+			box-shadow: #666 0px 0px 10px;
 		}
 
 		img:hover {
 			border: solid 3px cornflowerblue;
+			box-shadow: #666 0px 0px 10px;
 		}
 
 		@keyframes inlogo {
@@ -120,13 +122,17 @@
 
 		@keyframes textin {
 			0% {
-				margin-top: 100vh;
+				opacity: 0;
+				filter: alpha(opacity = 0);   /*兼容ie8以前*/
+				margin-top: 80vh;
 			}
-			30% {
-				margin-top: 30vh;
+			60% {
+				margin-top: 60vh;
+				/*transform: matrix(0.3,0.4,0.6,0.7,0.8,0.9);*/
 			}
 			100% {
 				margin-top: 1.2em;
+				/*transform: matrix(0,0,0,0,0,0);*/
 			}
 		}
 	</style>
