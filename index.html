@@ -17,6 +17,7 @@
 			background: -ms-linear-gradient(left, #ace, #f96); !*Opera11*!*/
 			font: bold 2rem/100% "Microsoft YaHei", Helvetica, Arial, Sans;
 			animation: bgchange 5s infinite alternate;
+			overflow: hidden;
 		}
 
 		.browserTest {
@@ -24,7 +25,7 @@
 			font: bold 0.96rem/100% "Microsoft YaHei", Helvetica, Arial, Sans;
 			color: #000;
 			*border: 16px solid #00F;
-			margin: 0.2em auto; /*IE下理解为10px*/
+			margin: 0.2em auto; /*!*IE下理解为10px*!*/
 			padding: 2.5em auto;
 			display: block; /*IE下再理解为5px*/
 			-moz-border-radius: 10px 15px 20px 30px / 20px 30px 10px 15px;
@@ -39,6 +40,11 @@
 
 		.outerBro {
 			margin-top: 1.2em;
+			width: 100%;
+			position: absolute;
+			transform: translate(-50%, -50%);
+			left: 50%;
+			top: 38%;
 		}
 
 		.browserTest a {
@@ -59,7 +65,7 @@
 				font-size: 9.3vmin;
 			}
 			.outerBro {
-				margin-top: 6vh;
+				top: 38%;
 			}
 		}
 
@@ -131,7 +137,7 @@
 				/*transform: matrix(0.3,0.4,0.6,0.7,0.8,0.9);*/
 			}
 			100% {
-				margin-top: 1.2em;
+				top: 38%;
 				/*transform: matrix(0,0,0,0,0,0);*/
 			}
 		}
