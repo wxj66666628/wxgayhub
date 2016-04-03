@@ -1,4 +1,4 @@
-# 星际长途何时开始-wxgayhub
+# 星际长途何时开始-wxgayhub <http://wxj66666628.github.io/wxgayhub/>
 ##个人记录
 
 Git Bash 退出输入状态  
@@ -21,3 +21,5 @@ $ git push origin gh-pages                 <br>
 git fetch origin master                 <br>
 git log -p master..origin/master                 <br>
 git merge origin/master                 <br>
+
+######[GitHub上README.md教程](http://blog.csdn.net/kaitiren/article/details/38513715) 
