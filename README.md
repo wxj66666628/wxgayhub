@@ -22,4 +22,9 @@ git fetch origin master                 <br>
 git log -p master..origin/master                 <br>
 git merge origin/master                 <br>
 
+##资源支持
 ######[GitHub上README.md教程](http://blog.csdn.net/kaitiren/article/details/38513715) 
+* [【有道笔记】前端补习内测版1.0](http://note.youdao.com/share/?id=641207fdec260a4b17b427b362864ddf&type=note)
+* [【有道笔记】2016.4.3百度春季——js相关](http://note.youdao.com/share/?id=34fdfedf3bbe8f1220a085df97388c4d&type=note)
+* [【有道笔记】算法相关](http://note.youdao.com/share/?id=53209a0448cccfaae0d69054f00c62f7&type=note)
+* [【有道笔记】2015百度暑期](http://note.youdao.com/share/?id=32b5b2045111ca2435c79c924957967f&type=note)
