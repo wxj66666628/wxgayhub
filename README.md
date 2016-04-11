@@ -28,3 +28,4 @@ git merge origin/master                 <br>
 * [【有道笔记】2016.4.3百度春季——js相关](http://note.youdao.com/share/?id=34fdfedf3bbe8f1220a085df97388c4d&type=note)
 * [【有道笔记】算法相关](http://note.youdao.com/share/?id=53209a0448cccfaae0d69054f00c62f7&type=note)
 * [【有道笔记】2015百度暑期](http://note.youdao.com/share/?id=32b5b2045111ca2435c79c924957967f&type=note)
+* [好书推荐——数学+物理+宇宙] (https://hacpai.com/article/1460337338386)
